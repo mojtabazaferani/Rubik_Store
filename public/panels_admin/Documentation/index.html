@@ -1,0 +1,954 @@
+<!doctype html>
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Ultra Admin Bootstrap Theme</title>
+    <meta name="description" content="">
+    <meta name="author" content="JayBabani">
+    <meta name="copyright" content="JayBabani">
+    <meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+    <meta name="date" content="2014-03-20T00:00:00+01:00">
+    <link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+    <link rel="stylesheet" href="assets/google-code-prettify/prettify.css" media="screen">
+    <script src="assets/google-code-prettify/prettify.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.scrollTo.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script>
+    document.createElement('section');
+    var duration = '500',
+        easing = 'swing';
+    </script>
+    <script src="assets/js/script.js"></script>
+    <style>
+    html {
+        background-color: #FFFFFF;
+        color: #383838;
+    }
+    
+    ::-moz-selection {
+        background: #444444;
+        color: #DDDDDD;
+    }
+    
+    ::selection {
+        background: #444444;
+        color: #DDDDDD;
+    }
+    
+    #documenter_sidebar #documenter_logo {
+        background-image: url(assets/images/logo.png);
+        background-size: contain;
+    }
+    
+    a {
+        color: #0000FF;
+    }
+    
+    .btn {
+        border-radius: 3px;
+    }
+    
+    .btn-primary {
+        background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+        background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+        background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+        background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+        background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+        background-image: linear-gradient(top, #0088CC, #0044CC);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+        border-color: #0044CC #0044CC #bfbfbf;
+        color: #FFFFFF;
+    }
+    
+    .btn-primary:hover,
+    .btn-primary:active,
+    .btn-primary.active,
+    .btn-primary.disabled,
+    .btn-primary[disabled] {
+        border-color: #0088CC #0088CC #bfbfbf;
+        background-color: #0044CC;
+    }
+    
+    hr {
+        border-top: 1px solid #EBEBEB;
+        border-bottom: 1px solid #FFFFFF;
+    }
+    
+    #documenter_sidebar,
+    #documenter_sidebar ul a {
+        background-color: #DDDDDD;
+        color: #222222;
+    }
+    
+    #documenter_sidebar ul a {
+        -webkit-text-shadow: 1px 1px 0px #EEEEEE;
+        -moz-text-shadow: 1px 1px 0px #EEEEEE;
+        text-shadow: 1px 1px 0px #EEEEEE;
+    }
+    
+    #documenter_sidebar ul {
+        border-top: 1px solid #AAAAAA;
+    }
+    
+    #documenter_sidebar ul a {
+        border-top: 1px solid #EEEEEE;
+        border-bottom: 1px solid #AAAAAA;
+        color: #444444;
+    }
+    
+    #documenter_sidebar ul a:hover {
+        background: #444444;
+        color: #DDDDDD;
+        border-top: 1px solid #444444;
+    }
+    
+    #documenter_sidebar ul a.current {
+        background: #444444;
+        color: #DDDDDD;
+        border-top: 1px solid #444444;
+    }
+    
+    #documenter_copyright {
+        display: block !important;
+        visibility: visible !important;
+    }
+    
+    body {
+        font-size: 14px;
+        line-height: 23px;
+    }
+    </style>
+</head>
+
+<body class="documenter-project-ultra">
+    <div id="documenter_sidebar">
+        <a href="#documenter_cover" id="documenter_logo"></a>
+        <ul id="documenter_nav">
+            <li><a class="current" href="#documenter_cover">Start</a></li>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#template">Template</a></li>
+            <li><a href="#ultra_core_plugin">Main Menu</a></li>
+            <li><a href="#pages_menu">Top Bar</a></li>
+            <li><a href="#shortcodes">Main Content</a></li>
+            <li><a href="#theme_options">Chat Bar</a></li>
+            <li><a href="#widgets_and_sidebar">Folder Structure</a></li>
+            <li><a href="#post_formats">CSS</a></li>
+            <li><a href="#theme_translation">Javascript</a></li>
+            <li><a href="#revolution_slider">Fonts</a></li>
+            <li><a href="#ultra_custom_slider">Barebone</a></li>
+            <li><a href="#html_structure">Plugin List</a></li>
+            <li><a href="#thank_you">THANK YOU!</a></li>
+        </ul>
+        <div id="documenter_copyright">Copyright JayBabani 2015
+            <br> made with the <a href="http://rxa.li/documenter">Documenter v2.0</a>
+        </div>
+    </div>
+    <div id="documenter_content">
+        <section id="documenter_cover">
+            <h1>Ultra Admin Theme</h1>
+            <h2>Bring your Admin Panel to life.</h2>
+            <div id="documenter_buttons">
+            </div>
+            <hr>
+            <ul>
+                <li>created (mm/dd/yyyy): 20/03/2015</li>
+                <li>latest update (mm/dd/yyyy): 20/03/2015</li>
+                <li>by: themepassion</li>
+                <li>
+                    <a href=""></a>
+                </li>
+                <li>email: <a href="mailto:themepassion@jaybabani.com">themepassion@jaybabani.com</a></li>
+            </ul>
+            <p>Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to email at themepassion@jaybabani.com. Thanks so much!</p>
+        </section>
+        <section id="overview">
+            <div class="page-header">
+                <h3>Brief Overview</h3>
+                <hr class="notop">
+            </div>
+            <p>
+                Ultra Admin is a premium admin dashboard theme. Specially designed to give your admin panel a unique and elegant look.It is easy to customize and coded in developer friendly manner.
+                <br>
+                <br> It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML and CSS3, jQuery. It is adaptive with any size viewport. Solid integration of reusable UI components and latest trending plugins. This theme can be used for type of project applications.
+                <br>
+                <br> Ultra Admin includes many plugins implemented in 65+ separate HTML files. It is designed to be a complete admin panel for any web project.
+            </p>
+            <p> &nbsp;</p>
+        </section>
+        <section id="features">
+            <div class="page-header">
+                <h3>Features</h3>
+                <hr class="notop">
+            </div>
+            <ul>
+                <li>Built with Bootstrap v3.3.1</li>
+                <li>Latest jQuery v1.11.2 </li>
+                <li>Fully Responsive &amp; Interactive</li>
+                <li>Elegant & Clean User Interface</li>
+                <li>Large collection of UI Components</li>
+                <li>Interactive widgets</li>
+                <li>Perfect Scroll Bar</li>
+                <li>Brilliant Chat API</li>
+                <li>Widgets like Todo task, notifications, Progress Tiles, Weather widget, User Profile tile, Counters etc.</li>
+                <li>Expanded and Collapsed Menu (Multi Menu Levels)</li>
+                <li>Page Loader Integration (PACE)</li>
+                <li>Many Reusable UI Components</li>
+                <li>Morris Chart</li>
+                <li>Chartjs</li>
+                <li>Flot Charts</li>
+                <li>Sparkline Charts</li>
+                <li>Easy Pie Chart</li>
+                <li>Rickshaw Charts</li>
+                <li>Pie Knobs</li>
+                <li>Gauge Meter</li>
+                <li>Google maps</li>
+                <li>Vector maps</li>
+                <li>Data Tables</li>
+                <li>Responsive Tables</li>
+                <li>Font Icons(Font Awesome 4.2.0) &amp; Glyphicons</li>
+                <li>Full width & Boxed Layout</li>
+                <li>Fully loaded Mailbox</li>
+                <li>Form UI Groups & Elements</li>
+                <li>Autonumeric</li>
+                <li>Form Input masks elements</li>
+                <li>Form Wizard</li>
+                <li>jQuery Validations (message and icon based)</li>
+                <li>Form Tags input</li>
+                <li>CKEditor</li>
+                <li>Bootstrap WYSIHTML5</li>
+                <li>Markdown Editors</li>
+                <li>Color Picker</li>
+                <li>Date Picker</li>
+                <li>Date Time Picker</li>
+                <li>Time Picker</li>
+                <li>File Dropzone (Drag and Drop Upload)</li>
+                <li>iCheck Checkbox and Radio elements</li>
+                <li>IOS type Switches</li>
+                <li>Multi Select</li>
+                <li>Select 2 - Select replacement library</li>
+                <li>Typeahead library for prefilling</li>
+                <li>UI KIT components</li>
+                <li>jQuery Sortable</li>
+                <li>Draggable Panels</li>
+                <li>Spinner</li>
+                <li>Range Sliders</li>
+                <li>Calendar integration</li>
+                <li>Numeric Counter</li>
+                <li>Image Cropper</li>
+                <li>Isotope Based Filterable Portfolio Gallery</li>
+                <li>jQuery UI and easing integrated</li>
+                <li>jsTree (File and Folder Management tool)</li>
+                <li>Messenger Notifications</li>
+                <li>Tocify</li>
+                <li>Viewport Library for onscreen animations</li>
+                <li>Pricing Tables (2 views - Narrow and Expanded)</li>
+                <li>Timeline (2 types - Centered and left aligned)</li>
+                <li>Login Page</li>
+                <li>User Registration Page (with social media)</li>
+                <li>Invoice</li>
+                <li>Team Members</li>
+                <li>Search Page</li>
+                <li>Blogs</li>
+                <li>FAQ</li>
+                <li>404, 500 Error Pages</li>
+                <li>User Lockscreen</li>
+                <li>Grid Based System</li>
+                <li>Google font - OpenSans and Oswald</li>
+                <li>Theme Barebone included</li>
+                <li>Well structured and formatted code</li>
+                <li>Commented and Prefixed Based Stylesheet</li>
+                <li>Detailed Documentation</li>
+                <li>Works well in all latest browsers like chrome, Firefox, Opera, Safari, IE9+</li>
+            </ul>
+            <p> &nbsp;</p>
+        </section>
+        <section id="template">
+            <div class="page-header">
+                <h3>
+	Template</h3>
+                <hr class="notop">
+            </div>
+            <p>The template consist of following components as show in image below:
+                <br> 1.) Main header Top Bar - Consist of logo, toggle options like the chat , messages, notifications, search and user profile shortcuts
+                <br> 2.) Side bar - Consist of user image and details, Main menu, Bar Graph Widgets
+                <br> 3.) Content Body
+                <br> 4.) Chat Slider - Consist of groups and Contact Users for instant messaging. Click on user opens the chat window with that user.
+            </p>
+            <p> <img alt="" src="assets/images/1.png" style="width: 100%;"></p>
+            <h3>HTML Structre</h3>
+            <h4>Page Head</h4>
+            <pre class="prettyprint lang-html linenums">
+				<pre class="html" id="line1">
+&lt;!DOCTYPE html&gt;
+&lt;html class=" "&gt;
+    &lt;head&gt;
+        &lt;!-- 
+         * @Package: Ultra Admin - Responsive Theme
+         * @Subpackage: Bootstrap
+         * @Version: 1.0
+         * This file is part of Ultra Admin Theme.
+        --&gt;
+        &lt;meta http-equiv="content-type" content="text/html;charset=UTF-8" /&gt;
+        &lt;meta charset="utf-8" /&gt;
+        &lt;title&gt;Ultra Admin : Default Layout&lt;/title&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /&gt;
+        &lt;meta content="" name="description" /&gt;
+        &lt;meta content="" name="author" /&gt;
+
+        &lt;link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" /&gt;    &lt;!-- Favicon --&gt;
+        &lt;link rel="apple-touch-icon-precomposed" href="assets/images/apple-touch-icon-57-precomposed.png"&gt;	&lt;!-- For iPhone --&gt;
+        &lt;link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/apple-touch-icon-114-precomposed.png"&gt;    &lt;!-- For iPhone 4 Retina display --&gt;
+        &lt;link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/apple-touch-icon-72-precomposed.png"&gt;    &lt;!-- For iPad --&gt;
+        &lt;link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/apple-touch-icon-144-precomposed.png"&gt;    &lt;!-- For iPad Retina display --&gt;
+
+
+        &lt;!-- CORE CSS FRAMEWORK - START --&gt;
+        &lt;link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen"/&gt;
+        &lt;link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/&gt;
+        &lt;link href="assets/plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/&gt;
+        &lt;link href="assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/&gt;
+        &lt;link href="assets/css/animate.min.css" rel="stylesheet" type="text/css"/&gt;
+        &lt;link href="assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" type="text/css"/&gt;
+        &lt;!-- CORE CSS FRAMEWORK - END --&gt;
+
+
+        &lt;!-- CORE CSS TEMPLATE - START --&gt;
+        &lt;link href="assets/css/style.css" rel="stylesheet" type="text/css"/&gt;
+        &lt;link href="assets/css/responsive.css" rel="stylesheet" type="text/css"/&gt;
+        &lt;!-- CORE CSS TEMPLATE - END --&gt;
+
+    &lt;/head&gt;
+    &lt;!-- END HEAD --&gt;
+				</pre>
+            </pre>
+            <p> &nbsp;</p>
+            <h4>Header</h4>
+            <pre class="prettyprint lang-html linenums">
+				<pre class="html" id="line1">
+
+&lt;!-- BEGIN BODY --&gt;
+&lt;body class=" "&gt;
+    &lt;!-- START TOPBAR --&gt;
+    &lt;div class='page-topbar '&gt;
+        &lt;div class='logo-area'&gt;
+
+        &lt;/div&gt;
+        &lt;div class='quick-area'&gt;
+            &lt;div class='pull-left'&gt;
+                &lt;ul class="info-menu left-links list-inline list-unstyled"&gt;
+                    ...
+                &lt;/ul&gt;
+            &lt;/div&gt;      
+            &lt;div class='pull-right'&gt;
+                &lt;ul class="info-menu right-links list-inline list-unstyled"&gt;            
+                    ...
+                &lt;/ul&gt;           
+            &lt;/div&gt;      
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;!-- END TOPBAR --&gt;
+				</pre>
+            </pre>
+            <p> &nbsp;</p>
+            <h4>Left Sidebar</h4>
+            <pre class="prettyprint lang-html linenums">
+				<pre class="html" id="line1">
+&lt;!-- START CONTAINER --&gt;
+&lt;div class="page-container row-fluid"&gt;
+
+    &lt;!-- SIDEBAR - START --&gt;
+    &lt;div class="page-sidebar "&gt;
+
+        &lt;!-- MAIN MENU - START --&gt;
+        &lt;div class="page-sidebar-wrapper" id="main-menu-wrapper"&gt; 
+
+            &lt;!-- USER INFO - START --&gt;
+            &lt;div class="profile-info row"&gt;
+                ...
+            &lt;/div&gt;
+            &lt;!-- USER INFO - END --&gt;
+
+            &lt;ul class='wraplist'&gt;
+                ...
+            &lt;/ul&gt;
+
+        &lt;/div&gt;
+        &lt;!-- MAIN MENU - END --&gt;
+
+        &lt;div class="project-info"&gt;
+            &lt;div class="block1"&gt;        
+                ...
+            &lt;/div&gt;
+            &lt;div class="block2"&gt;        
+                ...
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--  SIDEBAR - END --&gt;
+
+
+				</pre>
+            </pre>
+            <p> &nbsp;</p>
+            <h4>Main Content</h4>
+            <pre class="prettyprint lang-html linenums">
+				<pre class="html" id="line1">
+&lt;!-- START CONTENT --&gt;
+&lt;section id="main-content" class=" "&gt;
+    &lt;section class="wrapper" style='margin-top:60px;display:inline-block;width:100%;padding:15px 0 0 15px;'&gt;
+
+    &lt;div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'&gt;
+        &lt;div class="page-title"&gt;
+            ...               
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="clearfix"&gt;&lt;/div&gt;
+    
+    &lt;div class="col-lg-12"&gt;
+        &lt;section class="box "&gt;
+            ...
+        &lt;/section&gt;
+    &lt;/div&gt;
+
+    &lt;/section&gt;
+&lt;/section&gt;
+&lt;!-- END CONTENT --&gt;
+				</pre>
+            </pre>
+            <p> &nbsp;</p>
+            <h4>Page End</h4>
+            <pre class="prettyprint lang-html linenums">
+				<pre class="html" id="line1">
+&lt;/div&gt;
+&lt;!-- END CONTAINER --&gt;
+
+&lt;!-- LOAD FILES AT PAGE END FOR FASTER LOADING --&gt;
+
+&lt;!-- CORE JS FRAMEWORK - START --&gt; 
+&lt;script src="assets/js/jquery-1.11.2.min.js" type="text/javascript"&gt;&lt;/script&gt; 
+&lt;script src="assets/js/jquery.easing.min.js" type="text/javascript"&gt;&lt;/script&gt; 
+&lt;script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"&gt;&lt;/script&gt; 
+&lt;script src="assets/plugins/pace/pace.min.js" type="text/javascript"&gt;&lt;/script&gt;  
+&lt;script src="assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js" type="text/javascript"&gt;&lt;/script&gt; 
+&lt;script src="assets/plugins/viewport/viewportchecker.js" type="text/javascript"&gt;&lt;/script&gt;  
+&lt;!-- CORE JS FRAMEWORK - END --&gt; 
+
+
+&lt;!-- CORE TEMPLATE JS - START --&gt; 
+&lt;script src="assets/js/scripts.js" type="text/javascript"&gt;&lt;/script&gt; 
+&lt;!-- END CORE TEMPLATE JS - END --&gt; 
+
+&lt;!-- Sidebar Graph - START --&gt; 
+&lt;script src="assets/plugins/sparkline-chart/jquery.sparkline.min.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="assets/js/chart-sparkline.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;!-- Sidebar Graph - END --&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+				</pre>
+            </pre>
+            <p> &nbsp;</p>
+            <p>
+            </p>
+            <p> &nbsp;</p>
+        </section>
+        <section id="ultra_core_plugin">
+            <div class="page-header">
+                <h3>Main Menu</h3>
+                <hr class="notop">
+                <p> <img alt="" src="assets/images/2.png" style="max-width: 100%;margin-right:150px;vertical-align:top;margin-bottom:30px;">
+                    <img alt="" src="assets/images/3.png" style="max-width: 100%;"></p>
+                <div style="clear:both;width:100%;height:1px;"></div>
+                <pre class="prettyprint lang-html linenums">
+					<pre class="html" id="line1">
+&lt;!-- MAIN MENU - START --&gt;
+&lt;div class="page-sidebar-wrapper" id="main-menu-wrapper"&gt;
+    &lt;!-- USER INFO - START --&gt;
+    &lt;div class="profile-info row"&gt;
+        ...
+    &lt;/div&gt;
+    &lt;!-- USER INFO - END --&gt;
+    &lt;ul class='wraplist'&gt;
+        &lt;li&gt;
+            ...
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a href="javascript:;"&gt; &lt;i class="fa fa-suitcase"&gt;&lt;/i&gt; &lt;span class="title"&gt;...&lt;/span&gt;&lt;span class="arrow "&gt;&lt;/span&gt;&lt;/a&gt;
+            &lt;ul class="sub-menu"&gt;
+                &lt;li&gt;&lt;a href="xx.html"&gt;...&lt;/a&gt;&lt;/li&gt;
+                ... ...
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class="open"&gt;
+            ...
+            &lt;ul class="sub-menu" style='display:block;'&gt;
+                &lt;li&gt;&lt;a class="active" href="..."&gt;...&lt;/a&gt;&lt;/li&gt;
+                ... ...
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            ...
+            &lt;ul class="sub-menu"&gt;
+                &lt;li&gt;
+                    ...
+                &lt;/li&gt;
+                &lt;li&gt;
+                    ...
+                    &lt;ul class="sub-menu"&gt;
+                        &lt;li&gt;
+                            ...
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            ...
+                            &lt;ul class="sub-menu"&gt;
+                                &lt;li&gt;
+                                    ...
+                                &lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- MAIN MENU - END --&gt;
+
+					</pre>
+                </pre>
+                <p> &nbsp;</p>
+            </div>
+        </section>
+        <section id="pages_menu">
+            <div class="page-header">
+                <h3>Top Bar</h3>
+                <hr class="notop">
+            </div>
+            <p> <img alt="" src="assets/images/4.png" style="max-width: 100%;"></p>
+            <pre class="prettyprint lang-html linenums">
+					<pre class="html" id="line1">
+&lt;!-- START TOPBAR --&gt;
+&lt;div class='page-topbar '&gt;
+    &lt;div class='logo-area'&gt;
+    &lt;/div&gt;
+    &lt;div class='quick-area'&gt;
+        &lt;div class='pull-left'&gt;
+            &lt;ul class="info-menu left-links list-inline list-unstyled"&gt;
+                &lt;li class=""&gt;
+                    &lt;a href="#" data-toggle="sidebar" class="sidebar_toggle"&gt;
+                        &lt;i class="fa fa-bars"&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class=""&gt;
+                    &lt;a href="#" data-toggle="dropdown" class="toggle"&gt;
+                        &lt;i class="fa fa-envelope"&gt;&lt;/i&gt;
+                        &lt;span class="badge badge-primary"&gt;7&lt;/span&gt;
+                    &lt;/a&gt;
+                    &lt;ul class="dropdown-menu messages animated fadeIn"&gt;
+                        &lt;li class="list"&gt;
+                            &lt;ul class="dropdown-menu-list list-unstyled ps-scrollbar"&gt;
+                                ...
+                            &lt;/ul&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li class=""&gt;
+                    ...
+                &lt;/li&gt;
+                &lt;li class="hidden-sm hidden-xs searchform"&gt;
+                    &lt;div class="input-group"&gt;
+                        &lt;span class="input-group-addon input-focus"&gt;
+                            &lt;i class="fa fa-search"&gt;&lt;/i&gt;
+                        &lt;/span&gt;
+                        &lt;form action="search-page.html" method="post"&gt;
+                            &lt;input type="text" class="form-control animated fadeIn" placeholder="Search & Enter"&gt;
+                            &lt;input type='submit' value=""&gt;
+                        &lt;/form&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class='pull-right'&gt;
+            &lt;ul class="info-menu right-links list-inline list-unstyled"&gt;
+                &lt;li class="profile"&gt;
+                    &lt;a href="#" data-toggle="dropdown" class="toggle"&gt;
+                        &lt;img src="..." alt="user-image" class="img-circle img-inline"&gt;
+                        &lt;span&gt;... &lt;i class="fa fa-angle-down"&gt;&lt;/i&gt;&lt;/span&gt;
+                    &lt;/a&gt;
+                    &lt;ul class="dropdown-menu profile animated fadeIn"&gt;
+                        &lt;li&gt;
+                            ...
+                        &lt;/li&gt;
+                        ... ...
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li class="chat-toggle-wrapper"&gt;
+                    ...
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- END TOPBAR --&gt;
+
+					</pre>
+            </pre>
+            <p> &nbsp;</p>
+        </section>
+        <section id="shortcodes">
+            <div class="page-header">
+                <h3>Main Content</h3>
+                <hr class="notop">
+            </div>
+            <pre class="prettyprint lang-html linenums">
+					<pre class="html" id="line1">
+&lt;!-- START CONTENT --&gt;
+&lt;section id="main-content" class=" "&gt;
+    &lt;section class="wrapper" style='margin-top:60px;display:inline-block;width:100%;padding:15px 0 0 15px;'&gt;
+
+    &lt;div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'&gt;
+        &lt;div class="page-title"&gt;
+            ...               
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="clearfix"&gt;&lt;/div&gt;
+    
+    &lt;div class="col-lg-12"&gt;
+        &lt;section class="box "&gt;
+            ...
+        &lt;/section&gt;
+    &lt;/div&gt;
+
+    &lt;/section&gt;
+&lt;/section&gt;
+&lt;!-- END CONTENT --&gt;
+					</pre>
+            </pre>
+            <p> &nbsp;</p>
+        </section>
+        <section id="theme_options">
+            <div class="page-header">
+                <h3>Chat bar</h3>
+                <hr class="notop">
+            </div>
+            <p> <img alt="" src="assets/images/5.png" style="max-width: 100%;border: 1px solid #eeeeee;"></p>
+            <pre class="prettyprint lang-html linenums">
+					<pre class="html" id="line1">
+&lt;div class="page-chatapi hideit"&gt;
+    &lt;div class="search-bar"&gt;
+        &lt;input type="text" placeholder="Search" class="form-control"&gt;
+    &lt;/div&gt;
+    &lt;div class="chat-wrapper"&gt;
+        &lt;h4 class="group-head"&gt;Groups&lt;/h4&gt;
+        &lt;ul class="group-list list-unstyled"&gt;
+            &lt;li class="group-row"&gt;
+                &lt;div class="group-status available"&gt;
+                    &lt;i class="fa fa-circle"&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                &lt;div class="group-info"&gt;
+                    &lt;h4&gt;&lt;a href="#"&gt;...&lt;/a&gt;&lt;/h4&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class="group-row"&gt;
+                ...
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;h4 class="group-head"&gt;Favourites&lt;/h4&gt;
+        &lt;ul class="contact-list"&gt;
+            &lt;li class="user-row" id='chat_user_1' data-user-id='1'&gt;
+                &lt;div class="user-img"&gt;
+                    &lt;a href="#"&gt;&lt;img src="data/profile/avatar-1.png" alt=""&gt;&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class="user-info"&gt;
+                    &lt;h4&gt;&lt;a href="#"&gt;...&lt;/a&gt;&lt;/h4&gt;
+                    &lt;span class="status ..." data-status="..."&gt;...&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class="user-status ..."&gt;
+                    &lt;i class="fa fa-circle"&gt;&lt;/i&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class="user-row" id='chat_user_2' data-user-id='2'&gt;
+                ...
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;h4 class="group-head"&gt;More Contacts&lt;/h4&gt;
+        &lt;ul class="contact-list"&gt;
+            &lt;li class="user-row" id='chat_user_4' data-user-id='4'&gt;
+                ...
+            &lt;/li&gt;
+            ... ... ...
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="chatapi-windows "&gt;
+&lt;/div&gt;
+
+					</pre>
+            </pre>
+            <p> &nbsp;</p>
+        </section>
+        <section id="widgets_and_sidebar">
+            <div class="page-header">
+                <h3>Folder Structure</h3>
+                <hr class="notop">
+            </div>
+            <pre class="prettyprint"><span class="pln"> Ultra Admin HTML</span><span class="pun">/</span><span class="pln">
+  </span><span class="pun">├──</span><span class="pln"> assets</span><span class="pun">/</span><span class="pln">
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> css<span class="pun">/</span>
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> fonts<span class="pun">/</span>
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> images<span class="pun">/</span>
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> js<span class="pun">/</span>
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> plugins<span class="pun">/</span>
+  </span><span class="pun">└──</span><span class="pln"> data</span><span class="pun">/</span>    
+</pre>
+        </section>
+        <section id="post_formats">
+            <div class="page-header">
+                <h3>CSS</h3>
+                <hr class="notop">
+            </div>
+            <p>style.css is the main CSS file located in assets/css/ folder of the package. Whole CSS file is well indexed with topic and its related code.</p>
+            <p>Also animate.min.css file is found in this folder. It has all the animation classes for various elements.</p>
+            <p> &nbsp;</p>
+            <p> <img alt="" src="assets/images/6.png" style="max-width: 100%;margin-right:50px;vertical-align:top;margin-bottom:30px;">
+                <img alt="" src="assets/images/7.png" style="max-width: 100%;"></p>
+            <div style="clear:both;width:100%;height:1px;"></div>
+        </section>
+        <section id="theme_translation">
+            <div class="page-header">
+                <h3>Javascript</h3>
+                <hr class="notop">
+            </div>
+            <p>scripts.js is the mail javascript file having all the js code. File is located in assets/js/ folder. This file code is also well formatted and section in different respective function names.</p>
+            <p>Along with this chart library based js code and dashboard based js code are added in separate files for ease of use of user.</p>
+            <p> <img alt="" src="assets/images/8.png" style="max-width: 100%;"></p>
+        </section>
+        <section id="revolution_slider">
+            <div class="page-header">
+                <h3>Fonts</h3>
+                <hr class="notop">
+            </div>
+            <p>Google fonts are used in the theme. They are as follows:
+                <br>
+                <ul>
+                    <li><b>Oswald</b> - Used in Menu, page heading and buttons etc.</li>
+                    <li><b>Opensans</b> - Default Body fonts and used in most of the places</li>
+                </ul>
+            </p>
+            <p> &nbsp;</p>
+        </section>
+        <section id="ultra_custom_slider">
+            <div class="page-header">
+                <h3>BareBone</h3>
+                <hr class="notop">
+            </div>
+            <p> Ultra Admin Bootstrap Theme comes with a barebone page structure to make life of a new developer easier. The barebone has the basic structure used in a theme and is ready to add a new usable content.
+                <p> <img alt="" src="assets/images/9.png" style="max-width: 100%;border:1px solid #eeeeee;"></p>
+                <p> &nbsp;</p>
+        </section>
+        <section id="html_structure">
+            <div class="page-header">
+                <h3>Plugin List</h3>
+                <hr class="notop">
+            </div>
+            <p> Ultra Admin Theme uses many different jquery and CSS based plugins to give it amazing features. Below is the list of all plugin used.
+                <table width="100%" class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>URL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>jquery-1.11.2</td>
+                            <td><a href="http://www.jquery.com" target="_blank">http://www.jquery.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Twitter Bootstrap 3.3.1</td>
+                            <td><a href="http://getbootstrap.com/" target="_blank">http://getbootstrap.com/</a></td>
+                        </tr>
+                        <tr>
+                            <td>jquery Perfect Scroll Bar</td>
+                            <td><a href="https://github.com/noraesae/perfect-scrollbar/" target="_blank">https://github.com/noraesae/perfect-scrollbar/</a></td>
+                        </tr>
+                        <tr>
+                            <td>jQuery Easy Pie Chart</td>
+                            <td><a href="http://rendro.github.io/easy-pie-chart/" target="_blank">http://rendro.github.io/easy-pie-chart/</a></td>
+                        </tr>
+                        <tr>
+                            <td>jQuery Sparklines</td>
+                            <td><a href="http://omnipotent.net/jquery.sparkline " target="_blank">http://omnipotent.net/jquery.sparkline </a></td>
+                        </tr>
+                        <tr>
+                            <td>Chartjs</td>
+                            <td><a href=" 	http://www.chartjs.org/" target="_blank"> 	http://www.chartjs.org/</a></td>
+                        </tr>
+                        <tr>
+                            <td>Morris</td>
+                            <td><a href="http://www.oesmith.co.uk/morris.js/" target="_blank"> http://www.oesmith.co.uk/morris.js/</a></td>
+                        </tr>
+                        <tr>
+                            <td>jQuery Validation Plugin</td>
+                            <td><a href="http://jqueryvalidation.org/" target="_blank">http://jqueryvalidation.org/</a></td>
+                        </tr>
+                        <tr>
+                            <td>Font Awesome 4.2.0</td>
+                            <td><a href="http://fontawesome.io/" target="_blank">http://fontawesome.io/</a></td>
+                        </tr>
+                        <tr>
+                            <td>Dropzone</td>
+                            <td><a href="http://www.dropzonejs.com/" target="_blank">http://www.dropzonejs.com/</a></td>
+                        </tr>
+                        <tr>
+                            <td>Input Mask</td>
+                            <td><a href="http://github.com/RobinHerbots/jquery.inputmask" target="_blank">http://github.com/RobinHerbots/jquery.inputmask</a></td>
+                        </tr>
+                        <tr>
+                            <td>Flot Charts</td>
+                            <td><a href="http://www.flotcharts.org/" target="_blank">http://www.flotcharts.org/</a></td>
+                        </tr>
+                        <tr>
+                            <td>jQuery Multi Select</td>
+                            <td><a href="http://loudev.com/" target="_blank">http://loudev.com/</a></td>
+                        </tr>
+                        <tr>
+                            <td>Bootstrap Timepicker</td>
+                            <td><a href="http://jdewit.github.com/bootstrap-timepicker/" target="_blank">http://jdewit.github.com/bootstrap-timepicker/</a></td>
+                        </tr>
+                        <tr>
+                            <td>Bootstrap 3 WYSIWYG5</td>
+                            <td><a href="http://bootstrap-wysiwyg.github.io/bootstrap3-wysiwyg/" target="_blank">http://bootstrap-wysiwyg.github.io/bootstrap3-wysiwyg/</a></td>
+                        </tr>
+                        <tr>
+                            <td>Chartjs</td>
+                            <td><a href=" http://www.chartjs.org/" target="_blank"> http://www.chartjs.org/</a></td>
+                        </tr>
+                        <tr>
+                            <td>Vector map</td>
+                            <td><a href="http://jvectormap.com " target="_blank">http://jvectormap.com  </a></td>
+                        </tr>
+                        <tr>
+                            <td>DataTables</td>
+                            <td><a href=" http://www.datatables.net/" target="_blank"> 	http://www.datatables.net/</a></td>
+                        </tr>
+                        <tr>
+                            <td>Responsive Table</td>
+                            <td><a href="http://gergeo.se/RWD-Table-Patterns" target="_blank">http://gergeo.se/RWD-Table-Patterns</a></td>
+                        </tr>
+                        <tr>
+                            <td> jQuery Knob</td>
+                            <td><a href=" http://anthonyterrien.com/knob/" target="_blank">http://anthonyterrien.com/knob/</a></td>
+                        </tr>
+                        <tr>
+                            <td>FullCalendar</td>
+                            <td><a href=" 	http://arshaw.com/fullcalendar/" target="_blank"> 	http://arshaw.com/fullcalendar/</a></td>
+                        </tr>
+                        <tr>
+                            <td>Gauge</td>
+                            <td><a href="http://bernii.github.io/gauge.js/ " target="_blank">http://bernii.github.io/gauge.js/ </a></td>
+                        </tr>
+                        <tr>
+                            <td>Autonumeric</td>
+                            <td><a href="http://www.decorplanit.com/plugin/5" target="_blank">http://www.decorplanit.com/plugin/</a></td>
+                        </tr>
+                        <tr>
+                            <td>Autosize</td>
+                            <td><a href="http://www.jacklmoore.com/autosize5" target="_blank">http://www.jacklmoore.com/autosize</a></td>
+                        </tr>
+                        <tr>
+                            <td>CKEditor</td>
+                            <td><a href="http://ckeditor.com/5" target="_blank">http://ckeditor.com/</a></td>
+                        </tr>
+                        <tr>
+                            <td>jQuery countTo</td>
+                            <td><a href="https://github.com/mhuggins/jquery-countTo5" target="_blank">https://github.com/mhuggins/jquery-countTo</a></td>
+                        </tr>
+                        <tr>
+                            <td>iCheck </td>
+                            <td><a href="http://git.io/arlzeA5" target="_blank">http://git.io/arlzeA</a></td>
+                        </tr>
+                        <tr>
+                            <td>Datepicker for Bootstrap</td>
+                            <td><a href="http://www.eyecon.ro/bootstrap-datepicker/">http://www.eyecon.ro/bootstrap-datepicker/</a></td>
+                        </tr>
+                        <tr>
+                            <td>Colorpicker for Bootstrap</td>
+                            <td><a href="http://www.eyecon.ro/bootstrap-colorpicker/">http://www.eyecon.ro/bootstrap-colorpicker/</a></td>
+                        </tr>
+                        <tr>
+                            <td>Date Range Picker for Bootstrap</td>
+                            <td><a href="https://github.com/dangrossman/bootstrap-daterangepicker">https://github.com/dangrossman/bootstrap-daterangepicker</a></td>
+                        </tr>
+                        <tr>
+                            <td>Bootstrap Tags Input</td>
+                            <td><a href="https://github.com/timschlechter/bootstrap-tagsinput" target="_blank">https://github.com/timschlechter/bootstrap-tagsinput</a></td>
+                        </tr>
+                        <tr>
+                            <td>Image Cropper</td>
+                            <td><a href="http://fengyuanchen.github.io/cropper/5" target="_blank">http://fengyuanchen.github.io/cropper/</a></td>
+                        </tr>
+                        <tr>
+                            <td>Isotope</td>
+                            <td><a href="http://isotope.metafizzy.co5" target="_blank">http://isotope.metafizzy.co</a></td>
+                        </tr>
+                        <tr>
+                            <td>jQuery UI</td>
+                            <td><a href="https://jqueryui.com/5" target="_blank">https://jqueryui.com/</a></td>
+                        </tr>
+                        <tr>
+                            <td>jsTree</td>
+                            <td><a href="http://jstree.com/ 5" target="_blank">http://jstree.com/ </a></td>
+                        </tr>
+                        <tr>
+                            <td>jQuery messenger Notification</td>
+                            <td><a href="http://github.hubspot.com/messenger/5" target="_blank">http://github.hubspot.com/messenger/</a></td>
+                        </tr>
+                        <tr>
+                            <td>Pace</td>
+                            <td><a href="github.hubspot.com/pace/5" target="_blank">github.hubspot.com/pace/</a></td>
+                        </tr>
+                        <tr>
+                            <td>jQuery prettyPhoto</td>
+                            <td><a href="http://www.no-margin-for-errors.com5" target="_blank">http://www.no-margin-for-errors.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>jQuery Tocify</td>
+                            <td><a href="http://gregfranko.com/jquery.tocify.js/5" target="_blank">http://gregfranko.com/jquery.tocify.js/</a></td>
+                        </tr>
+                        <tr>
+                            <td>Typeahead</td>
+                            <td><a href="https://github.com/twitter/typeahead.js5" target="_blank">https://github.com/twitter/typeahead.js</a></td>
+                        </tr>
+                        <tr>
+                            <td>UIkit</td>
+                            <td><a href="http://www.getuikit.com5" target="_blank">http://www.getuikit.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>jQuery View Port Checker</td>
+                            <td><a href="https://github.com/dirkgroenen/jQuery-viewport-checker5" target="_blank">https://github.com/dirkgroenen/jQuery-viewport-checker</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p> &nbsp;</p>
+        </section>
+        <section id="thank_you">
+            <div class="page-header">
+                <h3>THANK YOU!</h3>
+                <hr class="notop">
+            </div>
+            <p> Once again, thank you so much for purchasing this Theme. As I said at the beginning, I&#39;d be glad to help you if you have any questions relating to this theme.</p>
+        </section>
+    </div>
+</body>
+
+</html>
